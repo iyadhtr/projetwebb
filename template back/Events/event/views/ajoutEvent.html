@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>formulaire d'ajout</title>
+	<meta charset="utf-8">
+
+	 <script type="text/javascript" src="ajoutEvent.js"></script>
+
+	 <style type="text/css">
+	 	
+	 	.error { color: #FFFFFF; border: 1px dotted #000000; padding: 10px; background-color: #FF0000; }
+	 </style>
+</head>
+
+
+<body>
+
+<form method="post" action="ajoutEvent.php" onsubmit="return verif()">
+	<h1 style="color: #DA3250;">Ajouter un evenement</h1>
+
+	<fieldset>
+		<legend style="color: #DA3250"> <strong>les coordonnées</strong> </legend>
+	<p>
+		<label for="idevent" > <strong>id de l'event :</strong> </label> 
+		<input type="text" name="idE" id="idE" placeholder="exp:1234" />
+	</p>
+
+	<p>
+		<label for="nomE"> <strong>nom de l'event:</strong></label> 
+		<input type="text" name="nomE" id="nomE" placeholder="saint valentin" size="20"/>
+	</p>
+
+	<p>
+		<label for="dateE"> <strong>date de l'event:</strong> </label> 
+		<input type="date" name="dateE" id="dateE" />
+	</p>
+
+	
+
+	<p>
+		<label for="duree"><strong>duree de l'event</strong></label> 
+		<input type="text" name="duree" id="duree" size="10" placeholder="exp:1jour/2jours..."/>
+	</p>
+<!--********************************************************************************************************-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<input type="submit" value="ajouter">
+
+<a href="ajoutEvent.html"><input type="reset" value="reset"></a>
+
+<a href="../../../index-1.html"><input type="" value="retour"></a><br>
+
+
+</form>
+<br />
+<br />
+
+<div id="alerte">
+	
+
+</div>
+
+</body>
+</html>
