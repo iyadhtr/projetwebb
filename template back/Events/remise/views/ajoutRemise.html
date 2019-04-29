@@ -9,17 +9,21 @@
 	 <script type="text/javascript" src="ajoutR.js"></script>
 
 	 <style type="text/css">
-	 	
+	 	.back{background-image: url('../../../img/logo/back.png') ;}
 	 	.error { color: #FFFFFF; border: 1px dotted #000000; padding: 10px; background-color: #FF0000; }
 	 </style>
 </head>
 
-
+<div class="back">
 <body>
 
-<form method="post" action="ajoutRemise.php" onsubmit="return verif()">
+	<div class="logomodifierremise" style="padding-left: 630px;">
+				<a href="#"><img src="../../../img/logo/logo.jpg" alt="logo bazart"  style="width : 250px; height: 250px" ></a>
+			</div>
 
-	<h1 style="color: #DA3250;">Ajouter d'une Remise</h1>
+<form method="post" action="ajoutRemise.php" onsubmit="return verif()" style="padding-top: 0px;" >
+
+	<h1 style="color: #DA3250; background: rgba(0,0,0,0.4)" align="center" >Ajouter une Remise</h1>
 
 	<fieldset>
 		<legend style="color: #DA3250"> <strong>les coordonnées</strong></legend>
@@ -50,18 +54,19 @@
 <input type="submit" value="ajouter" />
 
 <a href="ajoutRemise.html"><input type="reset" value="reset"></a>
-
-<a href="../../../index-1.html"><input type="text" value="retour"></a><br>
+<a href="../../../index-1.html"><p><strong>Retour</strong></p></a>
 
 
 </form>
-<br />
-<br />
+
 
 <div id="alerte">
 	
 
 </div>
 
+</fieldset>
+</div>
 </body>
+
 </html>

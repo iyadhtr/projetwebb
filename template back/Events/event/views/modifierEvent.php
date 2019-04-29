@@ -26,22 +26,26 @@ if (isset($_GET['id'])){
 	 <script type="text/javascript" src="modifierEvent.js"></script>
 
 	 <style type="text/css">
-	 	
+	 	.back{background-image: url('../../../img/logo/back.png') ;}
 	 	.error { color: #FFFFFF; border: 1px dotted #000000; padding: 10px; background-color: #FF0000; }
 	 </style>
 </head>
 
-
+<div class="back">
 <body>
 
+<div class="logomodifierevent" style="padding-left: 630px;">
+				<a href="#"><img src="../../../img/logo/logo.jpg" alt="logo bazart"  style="width : 250px; height: 250px" ></a>
+			</div>
+
 <form method="post" onsubmit="return verif()">
-	<h1 style="color: blue;">modifier un evenement</h1>
+	<h1 style="color: #DA3250; background: rgba(0,0,0,0.4)" align="center" >Modifier un Evenement</h1>
 
 	<fieldset>
-		<legend style="color: red"> <strong>nouveaux coordonnées</strong></legend>
+		<legend style="color:#DA3250"> <h2>les coordonnées</h2></legend>
 	<p>
 		<label for="id" > <strong>id de l'event :</strong> </label> 
-		<input type="number" name="id" id="idE" placeholder="exp:1234" value="<?PHP echo $id ?>">
+		<input type="text" name="id" id="idE" placeholder="exp:1234" value="<?PHP echo $id ?>">
 	</p>
 
 	<p>
@@ -67,9 +71,8 @@ if (isset($_GET['id'])){
 	<input type="hidden" name="id_ini" value="<?PHP echo $_GET['id'];?>">
 <!--********************************************************************************************************-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
-<a href="modifierEvent.php"><input type="reset" value="reset"></a>
+<a href="ajoutEvent.html"><input type="reset" value="reset"></a>
+<a href="../../../index-1.html"><p><strong>Retour</strong></p></a>
 
 </form>
 <br />
@@ -79,11 +82,6 @@ if (isset($_GET['id'])){
 	
 
 </div>
-
-
-
-
-
 
 <?PHP
 	}

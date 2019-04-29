@@ -4,7 +4,27 @@ $event1C=new EventC();
 $listeEvents=$event1C->afficherEvents();
 
 ?>
-<table border="1">
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>affichage ajout remise</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	td:hover  {background-color: #DA3250;}	
+
+	</style>
+</head>
+<body>
+
+<div class="logoaffevent" style="padding-left: 630px;">
+				<a href="#"><img src="../../../img/logo/logo.jpg" alt="logo bazart"  style="width : 250px; height: 250px" ></a>
+			</div>
+
+<div class="tab1" align="center" style="padding-top: 50px;">
+	<h1 style="color: #DA3250; background: rgba(0,0,0,0.4)" align="center" >Affichage des Evenements</h1>
+
+<table border="2">
 <tr>
 <td><strong>Id</td>
 <td><strong>Nom</td>
@@ -37,5 +57,8 @@ foreach($listeEvents as $row){
 ?>
 </table>
 <a href="ajoutEvent.html"><input type="submit" name="Ajouter" value="ajoutEvent"></a>
+</div>
 
+</body>
+</html>
 

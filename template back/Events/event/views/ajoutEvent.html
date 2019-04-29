@@ -8,27 +8,31 @@
 	 <script type="text/javascript" src="ajoutEvent.js"></script>
 
 	 <style type="text/css">
-	 	
+	 	.back{background-image: url('../../../img/logo/back.png') ;}
 	 	.error { color: #FFFFFF; border: 1px dotted #000000; padding: 10px; background-color: #FF0000; }
 	 </style>
 </head>
 
-
+<div class="back">
 <body>
 
-<form method="post" action="ajoutEvent.php" onsubmit="return verif()">
-	<h1 style="color: #DA3250;">Ajouter un evenement</h1>
+	<div class="logomodifierremise" style="padding-left: 630px;">
+				<a href="#"><img src="../../../img/logo/logo.jpg" alt="logo bazart"  style="width : 250px; height: 250px" ></a>
+			</div>
+
+<form method="post" action="ajoutEvent.php" onsubmit="return verif()" style="padding-top: 0px;">
+	<h1 style="color: #DA3250; background: rgba(0,0,0,0.4)" align="center" >Ajouter un Evenement</h1>
 
 	<fieldset>
 		<legend style="color: #DA3250"> <strong>les coordonnées</strong> </legend>
 	<p>
 		<label for="idevent" > <strong>id de l'event :</strong> </label> 
-		<input type="text" name="idE" id="idE" placeholder="exp:1234" />
+		<input type="text" name="idE" id="idE" size="17" placeholder="exp:1234" />
 	</p>
 
 	<p>
 		<label for="nomE"> <strong>nom de l'event:</strong></label> 
-		<input type="text" name="nomE" id="nomE" placeholder="saint valentin" size="20"/>
+		<input type="text" name="nomE" id="nomE" placeholder="saint valentin" size="15"/>
 	</p>
 
 	<p>
@@ -40,27 +44,24 @@
 
 	<p>
 		<label for="duree"><strong>duree de l'event</strong></label> 
-		<input type="text" name="duree" id="duree" size="10" placeholder="exp:1jour/2jours..."/>
+		<input type="text" name="duree" id="duree" size="15" placeholder="exp:1jour/2jours...  "/>
 	</p>
 <!--********************************************************************************************************-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
-<input type="submit" value="ajouter">
+<input type="submit" value="ajouter" />
 
 <a href="ajoutEvent.html"><input type="reset" value="reset"></a>
-
-<a href="../../../index-1.html"><input type="" value="retour"></a><br>
+<a href="../../../index-1.html"><p><strong>Retour</strong></p></a>
 
 
 </form>
-<br />
-<br />
 
 <div id="alerte">
 	
 
 </div>
-
+</fieldset>
+</div>
 </body>
+
 </html>
